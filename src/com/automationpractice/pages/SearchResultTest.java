@@ -24,9 +24,7 @@ public class SearchResultTest extends DriverInitialization{
 		BasicUtilityClass.javaScriptExecuterClick(checkOut);
 		BasicUtilityClass.implicitWait();
 		String itemsNoExpected = driver.findElement(By.id("summary_products_quantity")).getText();
-		//System.out.println(itemsNoExpected);
-		//Assert.assertEquals(itemsNoExpected, "1 Product","Product not added to the cart");
-		
+		Assert.assertTrue(itemsNoExpected.contains("1"));
 	}
 
 }

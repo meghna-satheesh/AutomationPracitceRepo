@@ -1,10 +1,14 @@
 package com.automationpractice.utility;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebElement;
@@ -77,5 +81,7 @@ public class BasicUtilityClass extends DriverInitialization{
 	 * Initialize Excel Object
 	 */
 	public static ExcelReader excelReaderObj = new ExcelReader("C:\\Users\\lenovo\\eclipse-workspace\\AutomationPractice\\Resources\\TestData.xlsx");
-
+	
+	
+	
 }

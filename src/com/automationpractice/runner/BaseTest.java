@@ -31,8 +31,9 @@ public class BaseTest extends DriverInitialization{
 	public void beforeClass() throws IOException {
 	  String usedBrowser = propGet.getPropertyValue("Browser");
 	  String URL = propGet.getPropertyValue("WebpageURL");
+	  String driverPath = propGet.getPropertyValue("DriverPath");
 	  String expectedTitle = propGet.getPropertyValue("ExpcetedTitleOnPageLoad");
-	  propGet.initializeAndLaunch(usedBrowser, URL, expectedTitle);
+	  propGet.initializeAndLaunch(usedBrowser, URL, expectedTitle,driverPath);
 	  
 	}	
 	

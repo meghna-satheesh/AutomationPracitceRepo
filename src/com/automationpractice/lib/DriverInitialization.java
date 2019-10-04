@@ -41,15 +41,15 @@ public class DriverInitialization {
 	 * Initialize driver and launch URL
 	 */
 	
-	public void initializeAndLaunch(String usedBrowser,String URL,String expectedTitle) {
+	public void initializeAndLaunch(String usedBrowser,String URL,String expectedTitle,String driverPath) {
 		 if(usedBrowser.equalsIgnoreCase("Google Chrome")) {
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\eclipse-workspace\\AutomationPractice\\Drivers\\chromedriver_win32\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", driverPath);
 				driver = new ChromeDriver();
 			}
 			else if(usedBrowser.equalsIgnoreCase("ie")|| usedBrowser.equalsIgnoreCase("Internet Explorer")) {
 				DesiredCapabilities capabilities = new DesiredCapabilities();
 				capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-				System.setProperty("webdriver.ie.driver", "C:\\Users\\lenovo\\eclipse-workspace\\AutomationPractice\\Drivers");
+				System.setProperty("webdriver.ie.driver", driverPath);
 				driver = new InternetExplorerDriver();
 			}
 			else {
