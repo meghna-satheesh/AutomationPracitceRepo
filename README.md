@@ -11,3 +11,4 @@ Please make a note of the below items before you clone and download:
    All the test scenarios are recorded as different xmls.The xmls are placed in the TestNG_XMLs folder.
 3. Only chrome standalone driver was pushed to Git due to some storage constraints.
 4. All the variable values are recorded in a separate file Global.properties and fetched using keyword driven method.
+5. Test Data is recorded in an excel file which is placed under the Resources folder.
